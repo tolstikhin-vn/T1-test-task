@@ -27,7 +27,7 @@ public class CharFrequencyServiceImplTest {
 
     /**
      * Тест метода {@link CharFrequencyServiceImpl#calculateCharacterFrequency(CharFrequencyRequest)}
-     * Проверяет, возвращает ли метод правильный ответ на запрос
+     * Проверяет корректность полученного результата вычислений с непустой строкой
      */
     @Test
     @DisplayName("Проверка вычисления частоты встречи символов в непустой строке")
@@ -50,7 +50,7 @@ public class CharFrequencyServiceImplTest {
 
     /**
      * Тест метода {@link CharFrequencyServiceImpl#calculateCharacterFrequency(CharFrequencyRequest)}
-     * Проверяет, возвращает ли метод правильный ответ на запрос
+     * Проверяет вызов исключения NullInputStringException в случае пустой строки
      */
     @Test
     @DisplayName("Проверка вызова исключения в случае пустой строки")
